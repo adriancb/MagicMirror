@@ -152,6 +152,11 @@ Module.register("currentweather",{
 		sunriseSunsetTime.innerHTML = " " + this.sunriseSunsetTime;
 		small.appendChild(sunriseSunsetTime);
 
+		var recommendation = document.createElement("sup");
+		recommendation.innerHTML = 'you should be wearing';
+		// recommendation.className = "wi wi-strong-wind dimmed";
+		small.appendChild(recommendation)
+
 		wrapper.appendChild(small);
 	},
 
